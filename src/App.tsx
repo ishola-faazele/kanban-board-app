@@ -5,7 +5,7 @@ import RenderColumns from './components/RenderColumns/RenderColumns';
 
 function App() {
     const [allTasks, setAllTasks] = useState<TASK[]>(initialCardsData);
-    const [projectName, setProjectName] = useState<string>('Project Name');
+    const [projectName, setProjectName] = useState<string>('Project ');
     const [isEditingName, setIsEditingName] = useState<boolean>(false);
 
     const modifyTask = (taskId: number, newValue: string | TASK, property: string) => {
